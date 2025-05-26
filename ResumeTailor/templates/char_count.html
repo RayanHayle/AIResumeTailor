@@ -1,0 +1,23 @@
+
+<!-- SOURCE 1: My homework 3 from user interface design class --> 
+<!-- SOURCE 2: https://forum.freecodecamp.org/t/build-a-real-time-counter-build-a-real-time-counter/732937 --> 
+
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <textarea id="jobdesc" name="jobdesc" rows="10" 
+         placeholder="Paste your job description here..." oninput="updateCharCount()"></textarea>
+    <span id="char-count">0 characters</span>
+        <br><br>
+
+
+    <script>
+        function updateCharCount() {
+            const charCount = document.getElementById('jobdesc').value.length;
+            document.getElementById('char-count').textContent = charCount + " characters";
+        }
+    </script>
+
+  </body>
+</html>

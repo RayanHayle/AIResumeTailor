@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume Tailor</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+
+    {% include 'navbar.html' %}
+
+    <h1 style="text-align: center;">Resume Tailor</h1>
+
+    <div class="container">
+
+        <div class="left side">
+            <h2>Original Resume</h2>
+            <div class="preview-box">
+                {% if resume_text %}
+                    <pre>{{ resume_text }}</pre>
+                {% else %}
+                    <p>Upload a resume to see it here.</p>
+                {% endif %}
+            </div>
+
+            <h2>Tailored Resume</h2>
+            <div class="preview-box">
+                {% if tailored_resume %} <!--change from job_desc -->
+                    <pre>{{ tailored_resume }}</pre> 
+                {% else %}
+                    <p style="font-family: 'Times New Roman', serif; color:gray;">Paste a job description and upload resume to tailor.</p>
+                {% endif %}
+            </div>
+
+            {% if tailored_resume %}
+                <!-- download the tailored resume PDF -->
+                <a href="/download">
+                    <button>Download Tailored Resume</button>
+                </a>
+            {% endif %}
+        </div>
+        <!------------------------------------->
+        <div class="right side">
+            <h2>Upload Resume</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="resume" accept=".pdf"><br><br>
+
+                 <!--expand on the char count-->
+                {% include 'char_count.html' %}
+
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    </body>
+</html>

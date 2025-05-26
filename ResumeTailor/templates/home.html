@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Resume Tailor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <style>
+
+    h1, h2, h3{ /* specific only to these headings - rest will be in blue */
+      color: black;
+    }
+  </style>
+  
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+<div class="welcome">
+    <h1>Welcome to Resume Tailor!</h1>
+    <h2>By: Rayan Ali Hayle</h2>
+    <h3 style=" font-weight: normal; font-size: 1.2em;">Easily adjust your resume to match any job description.</h3>
+
+
+    <a href="{{ url_for('upload') }}">
+        <button>Start Tailoring</button>
+    </a>
+</div>
+
+</body>
+</html>
