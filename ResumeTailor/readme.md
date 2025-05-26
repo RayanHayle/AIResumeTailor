@@ -33,4 +33,4 @@ This will give users the ability to use AI to tailor their resume in accordance 
 
 - If you want to test give this description and use  the file under /uploads: 
 
-  `Change the name to rayan hayle, and email to rah2236@gmail.com, and EDUCATION to Columbia College, Columbia University don't add LinkedIn and github in the tip`
+  `Change the name to rayan hayle, and email to rah2236@gmail.com, and EDUCATION to Columbia College, Columbia University don't add LinkedIn and github in the top`
