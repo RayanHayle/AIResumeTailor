@@ -3,7 +3,7 @@
 
 ### Author:
 - [Rayan Hayle](https://github.com/...) <rah2236@columbia.edu>
- 
+- To get preview go to static/images 
 
 ## Project Description
 
