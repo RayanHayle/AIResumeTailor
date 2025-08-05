@@ -1,7 +1,7 @@
 # <AI-Powered Resume Tailoring Website>
 
 ## Project Description
-- To get preview go to static/images 
+To get preview go to static/images 
 
 **Goal:**  
 An AI powered website that allows users to upload a resume. This will give user the ability to use AI to tailor their resume in accordance with job description
