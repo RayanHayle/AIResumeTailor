@@ -1,4 +1,3 @@
-# COMS W2132 Intermediate Computing in Python, Final Project 
 ## <AI-Powered Resume Tailoring Website>
 
 ### Author:
